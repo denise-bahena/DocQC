@@ -61,7 +61,8 @@ def run_qc(uploaded_file, assignee, qc_type):
         ws["C5"] = row.get("FullName", "")
         ws["C7"] = fullname
         ws["C8"] = today
-        ws["C163"] = fullname
+        ws["C166"] = fullname
+        ws["C167"] = today
 
         if qc_type == "Mods / Renewals / Extensions":
             ws["G1"] = row.get("Stage Date", "")
